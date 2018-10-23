@@ -1,5 +1,6 @@
 package fun.lww.swagger;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.stereotype.Controller;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/hello")
+@Api("hello")
 public class HelloController {
 
 	@RequestMapping(value = "/abc", method = RequestMethod.GET)
